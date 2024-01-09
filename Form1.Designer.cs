@@ -32,9 +32,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            nom_user = new TextBox();
+            email_user = new TextBox();
+            prenom_user = new TextBox();
             button1 = new Button();
             checkBox1 = new CheckBox();
             SuspendLayout();
@@ -43,7 +43,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft YaHei", 18F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
-            label1.Location = new Point(329, 35);
+            label1.Location = new Point(156, 39);
             label1.Name = "label1";
             label1.Size = new Size(161, 31);
             label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F);
-            label2.Location = new Point(60, 134);
+            label2.Location = new Point(18, 142);
             label2.Name = "label2";
             label2.Size = new Size(93, 21);
             label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F);
-            label3.Location = new Point(60, 169);
+            label3.Location = new Point(18, 177);
             label3.Name = "label3";
             label3.Size = new Size(113, 21);
             label3.TabIndex = 1;
@@ -73,49 +73,50 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F);
-            label4.Location = new Point(60, 206);
+            label4.Location = new Point(18, 214);
             label4.Name = "label4";
             label4.Size = new Size(100, 21);
             label4.TabIndex = 1;
             label4.Text = "Votre email : ";
             // 
-            // textBox1
+            // nom_user
             // 
-            textBox1.Location = new Point(198, 132);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 23);
-            textBox1.TabIndex = 2;
+            nom_user.Location = new Point(156, 140);
+            nom_user.Name = "nom_user";
+            nom_user.Size = new Size(249, 23);
+            nom_user.TabIndex = 2;
             // 
-            // textBox2
+            // email_user
             // 
-            textBox2.Location = new Point(198, 204);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(249, 23);
-            textBox2.TabIndex = 2;
+            email_user.Location = new Point(156, 212);
+            email_user.Name = "email_user";
+            email_user.Size = new Size(249, 23);
+            email_user.TabIndex = 2;
             // 
-            // textBox3
+            // prenom_user
             // 
-            textBox3.Location = new Point(198, 167);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(249, 23);
-            textBox3.TabIndex = 2;
+            prenom_user.Location = new Point(156, 175);
+            prenom_user.Name = "prenom_user";
+            prenom_user.Size = new Size(249, 23);
+            prenom_user.TabIndex = 2;
             // 
             // button1
             // 
             button1.BackColor = SystemColors.MenuHighlight;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(311, 303);
+            button1.Location = new Point(156, 308);
             button1.Name = "button1";
             button1.Size = new Size(193, 75);
             button1.TabIndex = 3;
             button1.Text = "Valider";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(198, 250);
+            checkBox1.Location = new Point(156, 258);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(215, 19);
             checkBox1.TabIndex = 4;
@@ -126,12 +127,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(472, 422);
             Controls.Add(checkBox1);
             Controls.Add(button1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(prenom_user);
+            Controls.Add(email_user);
+            Controls.Add(nom_user);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -148,9 +149,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox nom_user;
+        private TextBox email_user;
+        private TextBox prenom_user;
         private Button button1;
         private CheckBox checkBox1;
     }
