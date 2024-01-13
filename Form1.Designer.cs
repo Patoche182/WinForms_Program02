@@ -102,7 +102,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.MenuHighlight;
+            button1.BackColor = Color.DeepSkyBlue;
             button1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             button1.ForeColor = SystemColors.ButtonFace;
             button1.Location = new Point(156, 308);
@@ -127,6 +127,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SlateBlue;
             ClientSize = new Size(472, 422);
             Controls.Add(checkBox1);
             Controls.Add(button1);
